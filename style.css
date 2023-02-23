@@ -1,0 +1,133 @@
+:root {  
+        -color-cursor: #211F21;
+        -cursor-outline-shade: 0.3;
+        -cursor-size: 10;
+        -cursor-outline-size: 100px;
+      }
+html, 
+  body {
+        background-image: url(Frame\ 60.png);
+        background-position:  center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: forma-djr-display, sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        color: #211F21;
+      }
+      *{
+          padding: 0%;
+          margin: 0%;
+      }
+#app {
+  text-align: center;
+}
+    
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 75vh;
+      }
+
+      h1 {
+        font-size: 5rem;
+        text-align: center;
+      }
+      p {
+        font-size: 1rem;
+        text-align: center;
+      }
+      p2{
+        font-size: 0.5rem;
+      }
+      p3{
+        font-size: 0rem;
+        font-weight: 800;
+      }
+
+      .instagram-button {
+        background-color: transparent;
+        border: none;
+        color:#211F21;
+        font-size: 1.5rem;
+        padding: 1rem;
+        display: flex;
+        margin-top: 1rem;
+      }
+
+      .instagram-button:hover {
+        transform: scale(1.2);
+      }
+
+      i.fab.fa-instagram {
+        margin-right: 0rem;
+      }
+      a:link {
+      text-decoration: none;
+      }
+      a:visited {
+      text-decoration: none;
+      }
+      a:hover {
+      text-decoration: none;
+      }
+      a:active {
+      text-decoration: none;
+      }
+      .countdown{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #EB4826;
+      font-size: 0rem;
+      font-family: forma-djr-display, sans-serif;
+      }
+      ul{
+        border-color: black;
+        list-style: none outside none; 
+        margin:0; 
+        padding: 0; 
+        text-align: center;
+      }
+      li{
+        float: left;
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        display: inline;
+        margin: 0 2px ;
+      }
+      li a{
+        text-align: center;
+      }
+
+      #cursor-dot,
+      #cursor-dot-outline {
+        z-index: 999;
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        opacity: 0;
+        transform: translate(-50%, -50%);
+        transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
+      }
+      
+      #cursor-dot {
+        width: var(-cursor-size);
+        height: var(-cursor-size);
+        background-color: rgba(var(-color-cursor), 1);
+      }
+      
+      #cursor-dot-outline {
+        width: var(-cursor-outline-size);
+        height: var(-cursor-outline-size);
+        background-color: rgba(var(-color-cursor), var(-cursor-outline-shade));
+      }
